@@ -14,3 +14,5 @@ print("100" + "100")
 #we can index and slice the string
 print(my_string[0]) # prints the first letter of the string
 print(my_string[2:5]) #prints third letter till fifth excluding the sixth one
+#we can also prin the string in reverse
+print(my_string[::-1])
