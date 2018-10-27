@@ -16,3 +16,5 @@ print(my_string[0]) # prints the first letter of the string
 print(my_string[2:5]) #prints third letter till fifth excluding the sixth one
 #we can also prin the string in reverse
 print(my_string[::-1])
+#We can also print alternate characters in a string
+print(my_string[::2])
