@@ -3,3 +3,5 @@ print(type(100))
 print(dir(__builtins__))
 #int function
 print(int(10.5)) #it ignores the value after the decimal
+#round function round of the value 10.6 to 11
+print(round(10.6))
