@@ -13,3 +13,7 @@ copy_of_address = address.copy()
 print(copy_of_address)
 #count method
 print(address.count("address1"))
+#extend method
+address.extend("Th")
+print(address)
+#index method
