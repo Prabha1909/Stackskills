@@ -7,3 +7,12 @@ my_son = my_dict.popitem()
 print(my_son)
 print(type(my_son))
 print(type(my_dict.keys()))
+
+#more operations using dictionary
+
+print(my_dict.pop("Saira"))
+my_dict["Saira"] = "29072000"
+print(my_dict)
+a = [1, 2, 3]
+b = ['a', 'b', 'c']
+print(dict(zip(a,b)))
