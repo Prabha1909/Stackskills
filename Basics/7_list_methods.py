@@ -17,3 +17,4 @@ print(address.count("address1"))
 address.extend("Th")
 print(address)
 #index method
+print(address.index("address3"))
