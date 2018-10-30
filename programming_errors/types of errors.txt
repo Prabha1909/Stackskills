@@ -1,0 +1,25 @@
+1. Syntax error 
+2. Exceptions
+
+1. Syntax error
+	eg: int 1 #in python int is a function which has to be in paranthesis
+
+2. Exceptions
+	a. TypeError
+		eg: a = 1
+		    b = "2"
+		    print(a + b)
+	This returns a type error where a str and int cannot be added
+	
+	b. NameError
+		eg: a = 1
+		    b = "2"
+		    print(c)
+	This returns a nameerror where c is undefined.
+	
+	c. ZeroDivisionError
+		eg: a = 1
+		    b = "2"
+		    c= 3
+		    print(c/0)
+	When a int/float is divided by zero. it returns a zero division error.
