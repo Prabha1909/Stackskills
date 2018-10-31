@@ -8,7 +8,14 @@ def meaning(w):
     if w in data:
         return data[w]
     elif len(get_close_matches(w, data.keys(), cutoff=0.8)) > 0:
-        return "Did you mean {} instead?".format(get_close_matches(w, data.keys(), cutoff=0.8)[0])
+        user_input = input("Did you mean {} instead? Enter Y if Yes and N if No".format(get_close_matches(w, data.keys(), cutoff=0.8)[0]))
+        user_input = user_input.upper()
+        if user_input == 'Y':
+            return data[get_close_matches(w, data.keys(), cutoff=0.8)[0]]
+        elif user_input == 'N':
+            return "The word is not in the dictionary"
+        else:
+            return "Check the input"
     else:
         return "The word is not in the dictionary"
 
