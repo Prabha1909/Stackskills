@@ -5,9 +5,10 @@ data = json.load(open("C:\\Users\\pselvam\\Desktop\\Python_Tutorial\\data.json")
 
 def meaning(w):
     w = w.lower()
-    w = input("Did you mean {}? enter y for yes and n for No".format(get_close_matches(w, data.keys())[0]))
     if w in data:
         return data[w]
+    elif len(get_close_matches(w, data.keys(), cutoff=0.8)) > 0:
+        return "Did you mean {} instead?".format(get_close_matches(w, data.keys(), cutoff=0.8)[0])
     else:
         return "The word is not in the dictionary"
 
