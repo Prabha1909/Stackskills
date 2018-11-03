@@ -1,0 +1,15 @@
+Ask the user to enter a word for which the meaning is printed.
+
+My version of the program before going throught the lecture
+import json
+
+data = json.load(open("C:\\Users\\pselvam\\Desktop\\Python_Tutorial\\data.json"))
+
+def meaning():
+    word = input("Enter the word: ")
+    if word in data:
+        return data[word.lower()]
+    else:
+        return "The word is not in the dictionary"
+
+print(meaning())
